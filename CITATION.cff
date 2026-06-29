@@ -6,6 +6,7 @@ authors:
     given-names: "Brendon R."
 version: "0.1.0"
 license: "MIT"
+repository-code: "https://github.com/noblebrendon-cloud/build-evidence-library"
 abstract: "A local-first template for preserving completed build evidence, reusable lessons, possible documentation derivatives, and publication history."
 keywords:
   - build evidence
@@ -13,4 +14,3 @@ keywords:
   - documentation
   - local first
   - template repository
-

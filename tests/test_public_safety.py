@@ -103,9 +103,10 @@ def test_example_event_contains_no_private_references_or_sha1_values() -> None:
         assert value not in combined
 
 
-def test_metadata_files_are_consistent_and_pre_repository_url() -> None:
+def test_metadata_files_are_consistent_with_canonical_repository_url() -> None:
     citation = (REPO_ROOT / "CITATION.cff").read_text(encoding="utf-8")
     zenodo = json.loads((REPO_ROOT / ".zenodo.json").read_text(encoding="utf-8"))
+    repository_url = "https://github.com/noblebrendon-cloud/build-evidence-library"
 
     assert 'title: "Build Evidence Library"' in citation
     assert zenodo["title"] == "Build Evidence Library"
@@ -113,7 +114,15 @@ def test_metadata_files_are_consistent_and_pre_repository_url() -> None:
     assert zenodo["version"] == "0.1.0"
     assert 'license: "MIT"' in citation
     assert zenodo["license"] == "mit"
-    forbidden_metadata_terms = ("doi", "repository-code", "homepage", "url", "http://", "https://", "date-released")
+    assert f'repository-code: "{repository_url}"' in citation
+    assert zenodo["related_identifiers"] == [
+        {
+            "identifier": repository_url,
+            "relation": "isSupplementTo",
+            "resource_type": "software",
+        }
+    ]
+    forbidden_metadata_terms = ("doi", "homepage", "date-released", "zenodo.org")
     lowered_citation = citation.lower()
     lowered_zenodo = json.dumps(zenodo).lower()
     for term in forbidden_metadata_terms:

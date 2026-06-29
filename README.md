@@ -38,6 +38,14 @@ python tools/new_build_event.py EVT-2026-01-20-cache-timeout-fix 2026 "Cache tim
 The tool reads templates from this repository and writes event output only under the
 selected output root.
 
+## Repository
+
+Canonical source repository:
+
+```text
+https://github.com/noblebrendon-cloud/build-evidence-library
+```
+
 ## Directory Map
 
 ```text
@@ -78,9 +86,7 @@ record exist.
 
 - Create the public GitHub repository.
 - Mark the repository as a template.
-- Add the canonical GitHub repository URL to `CITATION.cff` and `.zenodo.json`.
 - Create GitHub Release `v0.1.0`.
 - Enable Zenodo archiving for the repository.
 - Verify Zenodo metadata and DOI after the archive is created.
 - Add final GitHub and Zenodo links to release material.
-
