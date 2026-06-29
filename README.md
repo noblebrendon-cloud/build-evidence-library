@@ -75,12 +75,19 @@ customer data, personal data, unreleased plans, screenshots with sensitive detai
 and organization-specific implementation names. The example event is fictional so the
 template can be reused safely.
 
-## Release And Citation
+## Release And Archive
 
 The v0.1.0 public license is MIT. Citation metadata lives in `CITATION.cff` for the
 GitHub citation surface and `.zenodo.json` for Zenodo archive metadata. The canonical
-source repository URL is recorded now that the GitHub repository exists. DOI fields
-are intentionally omitted until Zenodo creates the archived release record.
+source repository URL is recorded now that the GitHub repository exists.
+
+- GitHub release `v0.1.0`: https://github.com/noblebrendon-cloud/build-evidence-library/releases/tag/v0.1.0
+- Zenodo archive: https://zenodo.org/records/21045115
+- Version DOI: `10.5281/zenodo.21045115`
+- Concept DOI: `10.5281/zenodo.21045114`
+
+The version DOI cites this exact archived `v0.1.0` release. The concept DOI resolves
+to the latest archived version across the project release series.
 
 ## Public Release Checklist
 
