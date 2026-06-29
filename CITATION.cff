@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Build Evidence Library, please cite it using this metadata."
+title: "Build Evidence Library"
+authors:
+  - family-names: "Coleman"
+    given-names: "Brendon R."
+version: "0.1.0"
+license: "MIT"
+abstract: "A local-first template for preserving completed build evidence, reusable lessons, possible documentation derivatives, and publication history."
+keywords:
+  - build evidence
+  - project memory
+  - documentation
+  - local first
+  - template repository
+

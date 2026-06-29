@@ -1,0 +1,19 @@
+{
+  "title": "Build Evidence Library",
+  "creators": [
+    {
+      "name": "Coleman, Brendon R."
+    }
+  ],
+  "version": "0.1.0",
+  "license": "mit",
+  "description": "A local-first template for preserving completed build evidence, reusable lessons, possible documentation derivatives, and publication history.",
+  "keywords": [
+    "build evidence",
+    "project memory",
+    "documentation",
+    "local first",
+    "template repository"
+  ]
+}
+
