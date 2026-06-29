@@ -78,9 +78,9 @@ template can be reused safely.
 ## Release And Citation
 
 The v0.1.0 public license is MIT. Citation metadata lives in `CITATION.cff` for the
-GitHub citation surface and `.zenodo.json` for Zenodo archive metadata. Repository
-links and DOI fields are intentionally omitted until the public repository and Zenodo
-record exist.
+GitHub citation surface and `.zenodo.json` for Zenodo archive metadata. The canonical
+source repository URL is recorded now that the GitHub repository exists. DOI fields
+are intentionally omitted until Zenodo creates the archived release record.
 
 ## Public Release Checklist
 
